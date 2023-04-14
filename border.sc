@@ -1,6 +1,5 @@
-if(read_file('border_radius', 'json') == null, write_file('border_radius', 'json', 500));
-
 get_border_size() -> (
+    if(read_file('border_radius', 'json') == null, write_file('border_radius', 'json', 500));
     return(read_file('border_radius', 'json'))
 );
 
